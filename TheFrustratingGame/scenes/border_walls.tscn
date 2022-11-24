@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 415.5, 8 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 13, 313.5 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 14, 300.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 410, 15 )
+
+[node name="border_walls" type="Node"]
+
+[node name="wall_1" type="Area2D" parent="." groups=["wall"]]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall_1"]
+position = Vector2( 396.5, 8 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="wall_1"]
+margin_left = -25.0
+margin_right = 815.0
+margin_bottom = 16.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wall_2" type="Area2D" parent="." groups=["wall"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall_2"]
+position = Vector2( 3, 307 )
+shape = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="wall_2"]
+margin_left = -10.0
+margin_right = 17.0
+margin_bottom = 614.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wall_3" type="Area2D" parent="." groups=["wall"]]
+position = Vector2( 800, 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall_3"]
+position = Vector2( -4, 290.5 )
+shape = SubResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="wall_3"]
+margin_left = -18.0
+margin_top = -12.0
+margin_right = 10.0
+margin_bottom = 595.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="." groups=["wall"]]
+position = Vector2( 0, 603 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 400, -5 )
+shape = SubResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+margin_left = -11.0
+margin_top = -20.0
+margin_right = 808.0
+margin_bottom = 11.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

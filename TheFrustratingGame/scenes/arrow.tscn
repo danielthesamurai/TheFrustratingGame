@@ -1,0 +1,34 @@
+[gd_scene format=2]
+
+[node name="arrow" type="Node2D"]
+position = Vector2( 94, 336 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -35.6667
+margin_top = -1.00002
+margin_right = -15.6667
+margin_bottom = 8.99998
+rect_rotation = -60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = -27.6667
+margin_top = -4.99998
+margin_right = -7.66667
+margin_bottom = 5.00002
+rect_rotation = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = -25.6667
+margin_top = -4.99999
+margin_right = 34.3333
+margin_bottom = 5.00001
+__meta__ = {
+"_edit_use_anchors_": false
+}

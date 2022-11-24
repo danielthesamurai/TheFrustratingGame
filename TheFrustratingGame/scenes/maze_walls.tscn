@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 91, 10 )
+
+[node name="maze_walls" type="Area2D" groups=["wall"]]
+position = Vector2( 301, 444 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 70, -11 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = -17.0
+margin_right = 158.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
